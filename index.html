@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Etch A Sketch</title>
+    <link rel="icon" type="image/png" href="./Images/music.png">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+</head>
+<body ondragstart="return false;" ondrop="return false;">
+    <div class="header">
+        <h1 class="title-name">Etch A Sketch</h1>
+    </div>
+    <div id="canvas">
+
+    </div>
+<div class="options" id="options">
+    <input type="color" id="color-picker" class="color-picker" value="#070F2B">
+        <div class="grid-slider" id="grid-slider"><h3 class="slider-text" id="slider-text">16x16</h3>
+            <input class="range"  id="slider" type="range" value="16" min="1" max="64">
+        </div>
+        <img src="brush.png"  alt="brush icon" class="icons" id="brush">
+        <img src="eraser.png"  alt="eraser icon" class="icons" id="eraser">
+        <img src="reset.png"  alt="reset icon" class="icons" id="clear">
+        <!-- <button class="mybtn" id="reset" type="button">Clear</button>
+        <button class="mybtn" id="eraser" type="button">Eraser</button> -->
+       
+        </div>
+</body>
+</html>
