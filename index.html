@@ -15,21 +15,42 @@
 <body ondragstart="return false;" ondrop="return false;">
     <div class="header">
         <h1 class="title-name">Etch A Sketch</h1>
+        <p id="mode-info">Basic Color Mode</p>
     </div>
+    <div class="main-div">
+        <div class="buttons">
+        <img src="brush.png"  alt="brush icon" class="icons" id="brush">
+        
+         
+        <img src="eraser.png"  alt="eraser icon" class="icons" id="eraser">
+        <img src="reset.png"  alt="reset icon" class="icons" id="clear">
+        <img src="rainbow.png"  alt="rainbow icon" class="icons" id="rainbow">
+        <img src="opacity.jpg"  alt="opacity icon" class="icons" id="opacity">
+        </div>
     <div id="canvas">
 
     </div>
+</div>
 <div class="options" id="options">
-    <input type="color" id="color-picker" class="color-picker" value="#070F2B">
-        <div class="grid-slider" id="grid-slider"><h3 class="slider-text" id="slider-text">16x16</h3>
+    <div class="color-div">
+    <p class="picker-text">Pick a Color</p>
+    <input type="color" id="color-picker" class="color-picker" value="#252525"> 
+</div>
+        <div class="grid-slider" id="grid-slider"><h3 class="slider-text" id="slider-text"><b>Choose Grid Size:</b><br> 16x16</h3>
             <input class="range"  id="slider" type="range" value="16" min="1" max="64">
         </div>
-        <img src="brush.png"  alt="brush icon" class="icons" id="brush">
+       
+        <!-- <img src="brush.png"  alt="brush icon" class="icons" id="brush">
+        
+         
         <img src="eraser.png"  alt="eraser icon" class="icons" id="eraser">
-        <img src="reset.png"  alt="reset icon" class="icons" id="clear">
+        <img src="reset.png"  alt="reset icon" class="icons" id="clear"> -->
         <!-- <button class="mybtn" id="reset" type="button">Clear</button>
         <button class="mybtn" id="eraser" type="button">Eraser</button> -->
        
+        </div>
+        <div class="footer">
+            <p class="credit">Made by <a href="https://github.com/Meerawks" target="_blank">Sameer Asif</a></p>
         </div>
 </body>
 </html>
