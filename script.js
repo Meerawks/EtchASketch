@@ -39,6 +39,7 @@ const eraserBtn=document.querySelector('#eraser');
 let eraserBtnClicks=0;
 brushBtn.style.cssText='border-style: inset; border-width: 3px;border-color: #2e2e2e;';
 
+
 opacityBtn.addEventListener('click',()=>{
         opacityBtnClicks++;
         if(brushEnabled==true){
@@ -58,6 +59,7 @@ opacityBtn.addEventListener('click',()=>{
         }else{
             opacityBtnEnabled=true;
             opacityBtn.style.cssText='border-style: inset; border-width: 3px;border-color: #2e2e2e;';
+            opacityBtn.style.transitionDuration = "0.1s";
             modeInfo.innerHTML='Opacity Progression Mode';
             console.log("opacity enabled by opacity click");
             brushEnabled=false;
@@ -92,6 +94,7 @@ rainbowBtn.addEventListener('click',()=>{
     else{
         console.log("rainbow enabled by rainbow click");
         rainbowBtn.style.cssText='border-style: inset; border-width: 3px;border-color: #2e2e2e;';
+        rainbowBtn.style.transitionDuration = "0.1s";
         modeInfo.innerHTML='Psychedelic Mode';
         rainbowBtnEnabled=true;
         eraserBtn.style.cssText='border-style: none;';
@@ -127,6 +130,7 @@ brushBtn.addEventListener('click',()=>{
      }else{
         console.log("brush enabled by brush click");
         brushBtn.style.cssText='border-style: inset; border-width: 3px;border-color: #2e2e2e;';
+        brushBtn.style.transitionDuration = "0.1s";
         modeInfo.innerHTML='Basic Color Mode';
         brushEnabled=true;
         eraserBtn.style.cssText='border-style: none;';
@@ -163,6 +167,7 @@ eraserBtn.addEventListener('click',()=>{
      }else{
 
         eraserBtn.style.cssText='border-style: inset; border-width: 3px;border-color: #2e2e2e;';
+        eraserBtn.style.transitionDuration = "0.1s";
         modeInfo.innerHTML='Eraser';
         brushBtn.style.cssText='border-style: none;';
         brushEnabled=false;
