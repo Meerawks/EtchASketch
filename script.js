@@ -302,19 +302,19 @@ function changeColor(e){
         e.target.style.backgroundColor = randomColor;
         }
     else if (opacityBtnClicks%2!=0&&opacityBtnEnabled){
-        if(e.target.style.opacity==1){
+        if(e.target.style.opacity==1&& e.target.style.backgroundColor=='white'){
             console.log("first element");
-        e.target.style.opacity = opacityGrow +10+'%';
-        e.target.style.backgroundColor = currentColor;
+        e.target.style.opacity = 0;
+        
         }
-        else{
+        
             let opacityNew=e.target.style.opacity;
             console.log(opacityNew);
             opacityNew=opacityNew*100;
             e.target.style.opacity = opacityNew +10+'%';
             console.log(opacityNew);
          e.target.style.backgroundColor = currentColor;
-        }
+        
         }
 
     }
